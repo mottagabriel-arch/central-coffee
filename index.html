@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Central Coffee | Café, pausa e boa companhia</title>
+<meta name="description" content="Central Coffee: uma cafeteria para quem valoriza um bom café, uma pausa tranquila e bons momentos. Conheça nosso cardápio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#inicio" aria-label="Central Coffee, Turma 3004 — início">
+      <svg viewBox="0 10 780 220" role="img" aria-hidden="true" focusable="false">
+        <g transform="translate(20 20)">
+          <path d="M153.6 55A70 70 0 1 0 153.6 145" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round"/>
+          <g transform="translate(106 100) rotate(35)"><path fill-rule="evenodd" fill="#B77A4A" d="M-24 0A24 37 0 1 0 24 0A24 37 0 1 0 -24 0ZM-2.5-35C-15.5-14 10.5 14-2.5 35L2.5 35C15.5 14-10.5-14 2.5-35Z"/></g>
+        </g>
+        <text x="250" y="112" font-family="'Fraunces','Playfair Display',Georgia,serif" font-weight="700" font-size="66" letter-spacing="7" fill="currentColor">CENTRAL</text>
+        <text x="252" y="160" font-family="'Fraunces','Playfair Display',Georgia,serif" font-weight="400" font-size="34" letter-spacing="21" fill="currentColor">COFFEE</text>
+        <text x="252" y="198" font-family="'Fraunces','Playfair Display',Georgia,serif" font-weight="400" font-size="14" letter-spacing="6" fill="#B77A4A">TURMA 3004</text>
+      </svg>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#contato">Endereço</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>CENTRAL<br>COFFEE</h1>
+      <p class="tag">O melhor momento do dia cabe numa xícara.</p>
+      <p>Um lugar para desacelerar, aproveitar um café bem preparado e dividir boas conversas.</p>
+      <div class="cta">
+        <a class="btn primary" href="#cardapio">Conheça nosso cardápio</a>
+        <a class="btn ghost" href="#sobre">Conheça a Central Coffee</a>
+      </div>
+    </div>
+    <div class="cup" role="img" aria-label="Ilustração de uma xícara de café vista de cima">
+      <svg viewBox="0 0 320 320" width="320" height="320" aria-hidden="true">
+        <g class="steam"><path d="M130 70c-12 14 12 22 0 38"/><path d="M160 60c-12 14 12 22 0 38"/><path d="M190 70c-12 14 12 22 0 38"/></g>
+        <circle cx="160" cy="190" r="112" fill="#FFFDF9" stroke="#B8742F" stroke-width="3"/>
+        <circle cx="160" cy="190" r="84" fill="#4A2C1B"/>
+        <circle cx="160" cy="190" r="66" fill="#6B3F26"/>
+        <path d="M160 160c-22-18-48 4-26 26 10 10 26 18 26 34 0-16 16-24 26-34 22-22-4-44-26-26z" fill="#F3EADB"/>
+        <path d="M272 190h26a16 16 0 0 1 0 32h-30" fill="none" stroke="#FFFDF9" stroke-width="12" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="cardapio">
+  <div class="wrap">
+    <div class="head rv">
+      <h2>Nosso Cardápio</h2>
+    </div>
+    <div class="chips"><span class="chip active">Cardápio</span></div>
+    <div id="menu" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="wrap">
+    <h2 class="rv">Mais que café, uma experiência</h2>
+    <div class="rv">
+      <p>Um bom café começa no primeiro aroma e termina na pausa que ele proporciona. Na Central Coffee, cada xícara é um convite para desacelerar.</p>
+      <p>Seja para começar o dia, encontrar alguém ou ficar um tempo consigo mesmo, queremos que este seja o lugar onde o tempo anda um pouco mais devagar.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="head rv"><h2>Venha nos conhecer</h2></div>
+    <div class="info rv" id="info"></div>
+    <div id="actions" class="cta" style="margin-bottom:32px"></div>
+    <div class="map" id="map" hidden></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div><a class="logo" href="#inicio" style="color:var(--on-dark)">CENTRAL COFFEE</a><p style="margin:10px 0 0;color:#B6A592;max-width:32ch">Café, pausa e boa companhia.</p></div>
+      <ul aria-label="Rodapé">
+        <li><a href="#inicio">Início</a></li><li><a href="#cardapio">Cardápio</a></li><li><a href="#sobre">Sobre nós</a></li><li><a href="#contato">Endereço</a></li>
+      </ul>
+      <ul id="social" aria-label="Redes sociais"></ul>
+    </div>
+    <small>© <span id="year"></span> Central Coffee. Todos os direitos reservados.</small>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
